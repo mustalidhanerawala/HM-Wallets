@@ -121,5 +121,24 @@ body
     width: calc(100vw - 500px);
     height: auto;
     margin: 15px;
-    background-color: green;
+    background-color: black;
 }
+.paradesc
+{
+    color: aliceblue;
+    font-family: Merienda,Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+}
+@keyframes showdown {
+  from {
+    height: 0%;
+    width: 0%;
+  }
+  to {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+
+

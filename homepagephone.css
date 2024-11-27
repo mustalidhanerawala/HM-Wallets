@@ -97,18 +97,19 @@ body
 #containers
 {
     display: flex;
-    flex-direction: row;
+    margin: 10vh;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin: 10px;
+    margin: 10vh;
 }
 
 #box1, #box3, #box5
 {
-    width: 45vw;
+    width: 100vw;
+    margin: 5vh;
     height: auto;
     background-color: black;
-    
 }
 .disimg
 {
@@ -118,8 +119,8 @@ body
 }
 #box2, #box4, #box6
 {
-    width: calc(100vw - 45vw);
+    width: 100vw;
     height: auto;
-    margin: 10px;
+    margin: 5vh;
     background-color: green;
 }
