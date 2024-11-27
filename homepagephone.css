@@ -55,7 +55,7 @@ body
 #intro-video
 {
     width: 100vw;
-    height: 100vh;
+    height: 177vw;
 }
 
 #sec4
@@ -70,20 +70,20 @@ body
     color: goldenrod;
     font-weight: bold;
     font-family: Kode Mono,Arial, Helvetica, sans-serif;
-    font-size: 3.5vh;
+    font-size: 6vw;
     margin: 5vh;
     padding: 2vw;
     animation: appear linear;
     opacity: 0;
     animation-timeline: view();
-    animation-range: entry 30%; 
+    animation-range: entry -700%; 
 }
 @keyframes appear 
 {
     from 
     {
-        transform: translate(-500px);
         opacity: 0;
+        transform: translate(-300px);
     }
     to
     {
@@ -107,8 +107,8 @@ body
 }
 .showimg
 {
-    height: 100%;
-    width: auto;
+    width: 100%;
+    height: auto;
 }
 #containers
 {
@@ -120,7 +120,7 @@ body
 }
 #box1, #box3, #box5
 {
-    width: 60vw;
+    width: 40vw;
     height: 60vw;
     background-color: red;
     
