@@ -69,30 +69,18 @@ body
     font-size: 2.5vw;
     margin: 5vh;
     padding: 2vw;
-    opacity: 0;
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 30%;
 }
 @keyframes appear 
 {
-    from 
+    0%
     {
-        opacity: 0;
-        transform: translate(-500px);
+        transform: translateX(-300px);
     }
-    to
+    100%
     {
-        opacity: 1;
-        transform: translate(0px);
+        transform: translateX(0px);
     }
-    
 }
-#the-exclusive
-{
-    opacity: 1;
-}
-
 #sec5
 {
     width: 100wv;
@@ -112,9 +100,21 @@ body
 {
     height: 500px;
     width: 500px;
-    background-color: red;
+    background-color: black;
 }
-
+@keyframes entry
+{
+  0%
+  {
+    transform: rotate(-90deg);
+    transform: translateX(-300px);
+  }
+  100%
+  {
+    transform: rotate(0deg);
+    transform: translateX(0px);
+  }  
+}
 
 #box2, #box4, #box6
 {
