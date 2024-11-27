@@ -1,1 +1,2 @@
-# HM-Wallets
+Welcome to the HM Wallet Website, an online platform designed to showcase a variety of high-quality wallets. This website allows users to explore different wallet designs, view detailed product information, and make informed purchasing decisions.
+Link for the site : https://mustalidhanerawala.github.io/HM-Wallets/
