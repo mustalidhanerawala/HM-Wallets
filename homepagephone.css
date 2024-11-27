@@ -71,9 +71,10 @@ body
     font-weight: bold;
     font-family: Kode Mono,Arial, Helvetica, sans-serif;
     font-size: 6vw;
-    margin: 5vh;
+    margin: 5vw;
     padding: 2vw;
     animation: appear linear;
+    animation-delay: 5s;
     opacity: 0;
     animation-timeline: view();
     animation-range: entry -700%; 
