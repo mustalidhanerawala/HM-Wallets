@@ -69,19 +69,57 @@ body
     font-size: 2.5vw;
     margin: 5vh;
     padding: 2vw;
+    opacity: 0;
     animation: appear linear;
     animation-timeline: view();
-    animation-range: entry 30%;
+    animation-range: entry 20%;
 }
 @keyframes appear 
 {
     from 
     {
+        opacity: 0;
         transform: translate(-500px);
     }
     to
     {
+        opacity: 1;
         transform: translate(0px);
     }
     
+}
+#the-exclusive
+{
+    opacity: 1;
+}
+
+#sec5
+{
+    width: 100wv;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+#containers
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px;
+}
+#box1, #box3, #box5
+{
+    height: 500px;
+    width: 500px;
+    background-color: red;
+}
+
+
+#box2, #box4, #box6
+{
+    width: calc(100vw - 500px);
+    height: auto;
+    margin: 15px;
+    background-color: green;
 }
