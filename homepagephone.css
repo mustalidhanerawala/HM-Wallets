@@ -126,6 +126,7 @@ body
     position: relative;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -161,5 +162,21 @@ body
 {
     left: 0%;
 }
+}
+#buybtn
+{
+    margin: 5vh;
+    padding: 0.5vh;
+    border: 5px solid brown;
+    border-radius: 20px;
+    font-size: 2vh;
+    background-color: burlywood;
+    transition: transform 0.3s ease;
+    font-family: Poppins,Arial, Helvetica, sans-serif;
+}
+#buybtn:hover
+{
+    background-color: goldenrod; 
+    transform: translateX(10px) scale(1.1);
 } 
 
