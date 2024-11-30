@@ -122,5 +122,44 @@ body
     width: 100vw;
     height: auto;
     margin: 5vh;
-    background-color: green;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.paradesc
+{
+    color: aliceblue;
+    font-family: Merienda,Arial, Helvetica, sans-serif;
+    font-size: 3.5vh;
+    overflow: hidden;
+
+}
+
+.paradesc::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-left: 5px solid red;
+    animation: type 4s steps(20) infinite; 
+
+}
+@keyframes type 
+{
+40%, 60%
+{
+    left: 100%;
+}
+100%
+{
+    left: 0%;
+}
+} 
+

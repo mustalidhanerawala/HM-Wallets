@@ -95,6 +95,7 @@ body
     justify-content: space-evenly;
     align-items: center;
     margin: 50px;
+    position: relative;
 }
 #box1, #box3, #box5
 {
@@ -118,27 +119,50 @@ body
 
 #box2, #box4, #box6
 {
-    width: calc(100vw - 500px);
+    width: auto;
     height: auto;
     margin: 15px;
     background-color: black;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .paradesc
 {
     color: aliceblue;
     font-family: Merienda,Arial, Helvetica, sans-serif;
-    font-size: 1.5vw;
+    font-size: 3vw;
+    overflow: hidden;
+
 }
-@keyframes showdown {
-  from {
-    height: 0%;
-    width: 0%;
-  }
-  to {
+
+.paradesc::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
-  }
+    background-color: black;
+    border-left: 5px solid red;
+    animation: type 4s steps(20) infinite; 
+
 }
+@keyframes type 
+{
+40%, 60%
+{
+    left: 100%;
+}
+100%
+{
+    left: 0%;
+}
+} 
+       
 
 
 

@@ -1,6 +1,7 @@
 console.log("Hello World");
 
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", function () 
+{
     const exc = document.getElementById("the-exclusive");
     const excPosition = exc.getBoundingClientRect().top;
 
@@ -25,13 +26,14 @@ window.addEventListener("scroll", function () {
         }
     });
     
-    // Loop through each element in descpara and apply animation
-    descpara.forEach((para) => {
-        const descparaPosition = para.getBoundingClientRect().top;
-        if (descparaPosition < window.innerHeight && descparaPosition > 0) {
-            para.style.animation = "showdown linear";
-        } else {
-            para.style.animation = "none";
-        }
-    });
+     // Loop through each element in descpara and apply animation
+    descpara.forEach((para) => 
+    {
+         const descparaPosition = para.getBoundingClientRect().top;
+         if (descparaPosition < window.innerHeight && descparaPosition > 0) {
+             para.style.animation = "showdown linear";
+         } else {
+             para.style.animation = "none";
+         }
+     });
 });
